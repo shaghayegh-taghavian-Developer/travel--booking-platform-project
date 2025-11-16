@@ -14,14 +14,14 @@ function MainForm() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  // ایجاد ref برای هر بخش
+  //creat Ref
   const servicesRef = useRef(null);
   const faqRef = useRef(null);
   const homeRef = useRef(null);
   const footerRef = useRef(null);
   
 
-  // تابع برای اسکرول به بخش مورد نظر
+
   const scrollToSection = (sectionName) => {
     setActiveSection(sectionName);
 
